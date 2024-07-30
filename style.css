@@ -1,0 +1,109 @@
+ 
+ h2 {
+    color:rgb(139, 174, 255);
+}
+ main {
+    font-family:cursive;
+}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+  body {
+    text-align: center;
+}
+
+
+img {
+    border: 15px ridge #7783d6;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 20%;
+  }
+li{
+    float: left;
+}
+
+li a {
+    display: block;
+    padding: 8px;
+    background-color:rgb(254, 198, 224) ;
+    text-align: center;
+}
+
+
+
+  h2 { 
+    text-align: center;
+  }
+
+  /* Add a black background color to the top navigation */
+.topnav {
+    position: relative;
+    background-color: #bb53c5;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 21px;
+    font-family: cursive;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #cde2fa;
+    color: rgb(250, 147, 197);
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #8604aa;
+    color: rgb(253, 252, 253);
+  }
+  
+  /* Centered section inside the top navigation */
+  .topnav-centered a {
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  /* Right-aligned section inside the top navigation */
+  .topnav-right {
+    float: right;
+  }
+  
+  /* Responsive navigation menu - display links on top of each other instead of next to each other (for mobile devices) */
+  @media screen and (max-width: 600px) {
+    .topnav a, .topnav-right {
+      float: none;
+      display: block;
+    }
+  
+    .topnav-centered a {
+      position: relative;
+      top: 0;
+      left: 0;
+      transform: none;
+    }
+  }
+
+
+
+  
