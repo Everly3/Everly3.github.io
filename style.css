@@ -1,9 +1,15 @@
- 
+@font-face {
+    font-family: Quicksand;
+    src: url(Quicksand-VariableFont_wght.ttf);
+}
  h2 {
     color:rgb(139, 174, 255);
 }
  main {
-    font-family:cursive;
+    font-family: Quicksand;
+}
+body {
+    font-family: Quicksand;
 }
 img {
     display: block;
