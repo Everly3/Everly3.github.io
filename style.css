@@ -116,6 +116,15 @@ li a {
     }
   }
 
+  main {
+    padding: 4px;
+    margin: 10px;
+    border: dotted, lavender;
+  }
+.bigtext{
+    padding: 4px;
+    font-size: 110%;
+}
 
 
   
