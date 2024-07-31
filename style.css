@@ -1,3 +1,17 @@
+@keyframes stretch {
+    0% { transform: scale(1, 1); }
+    25% { transform: scale(2, 1); }
+    50% { transform: scale(1,1); }
+    75% { transform: scale(1,2); }
+    100% { transform: scale(1,1); }
+}       
+@keyframes color {
+        0% { background-color: rgb(254, 198, 235) ; }
+        25% { background-color: rgb(223, 97, 183) ; }
+        50% { background-color: rgb(254, 198, 235) ; }
+        75% { background-color: rgb(90, 28, 69); }
+        100% {background-color: rgb(254, 198, 235); }
+}
 @font-face {
     font-family: Quicksand;
     src: url(Quicksand-VariableFont_wght.ttf);
@@ -5,11 +19,31 @@
  h2 {
     color:rgb(139, 174, 255);
 }
+/* unvisited link */
+a:link {
+    color:rgb(139, 174, 255);
+  }
+  
+  /* visited link */
+  a:visited {
+    color:rgb(139, 174, 255);
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: rgb(249, 253, 3);
+  }
+  
+  /* selected link */
+  a:active {
+    color:rgb(139, 174, 255);
+  }
  main {
     font-family: Quicksand;
 }
 body {
     font-family: Quicksand;
+    
 }
 img {
     display: block;
@@ -123,8 +157,17 @@ li a {
   }
 .bigtext{
     padding: 4px;
-    font-size: 110%;
+    font-size: 23px;
 }
-
-
+body.dark-mode {
+    background-color: black;
+    color:cornsilk;
+}
+body {
+    animation-name: strech;
+    animation: duration 40s;
+    animation-iteration-count:infinite;
+    animation-timing-function: linear;
+    animation-delay: 1ms;
+}
   
