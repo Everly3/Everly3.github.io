@@ -12,6 +12,45 @@
         75% { background-color: rgb(90, 28, 69); }
         100% {background-color: rgb(254, 198, 235); }
 }
+@keyframes drop-in {
+    from {
+      transform:
+        rotate(-30deg) translateY(-100%);
+      opacity: 0;
+    }
+    to {
+      transform:
+        rotate(0deg) translateY(0%);
+      opacity: 1;
+    }
+  }
+
+
+/* The alert message box */
+.alert {
+    animation: drop-in 2000ms;
+    padding: 20px;
+    background-color: #b330e7; /* Red */
+    color: white;
+    margin-bottom: 15px;
+  }
+  
+  /* The close button */
+  .closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  /* When moving the mouse over the close button */
+  .closebtn:hover {
+    color: black;
+  }
 @font-face {
     font-family: Quicksand;
     src: url(Quicksand-VariableFont_wght.ttf);
