@@ -25,6 +25,19 @@
     }
   }
 
+  @keyframes drop-in2 {
+    from {
+      transform:
+        rotate(30deg) translateY(100%);
+      opacity: 0;
+    }
+    to {
+      transform:
+        rotate(0deg) translateY(0%);
+      opacity: 1;
+    }
+  }
+
 
   .container {
     width: 100%;
@@ -40,7 +53,7 @@ animation: confetti 5s ease-in-out -2s infinite;
 transform-origin: left top;
 }
 .confetti:nth-child(1) {
-background-color: #feefa4; left: 10%; animation-delay: 0;
+background-color: #5961fa; left: 10%; animation-delay: 0;
 }
 .confetti:nth-child(2) {
 background-color: #92e69c; left: 20%; animation-delay: -5s;
@@ -302,3 +315,43 @@ body {
     animation-delay: 1ms;
 }
   
+
+/* Callout box - fixed position at the bottom of the page */
+.callout {
+    animation: drop-in 2000ms;
+    position: fixed;
+    bottom: 35px;
+    right: 20px;
+    margin-left: 20px;
+    max-width: 300px;
+  }
+  
+  /* Callout header */
+  .callout-header {
+    padding: 25px 15px;
+    background: #fd72c1;
+    font-size: 30px;
+    color: rgb(129, 1, 184);
+  }
+  
+  /* Callout container/body */
+  .callout-container {
+    padding: 15px;
+    background-color: #bdb3ff;
+    color: rgb(168, 165, 250)
+  }
+  
+  /* Close button */
+  .closebtn2 {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    color: rgb(19, 16, 16);
+    font-size: 30px;
+    cursor: pointer;
+  }
+  
+  /* Change color on mouse-over */
+  .closebtn2:hover {
+    color: rgb(255, 255, 255);
+  }
